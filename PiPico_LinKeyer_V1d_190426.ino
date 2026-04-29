@@ -338,9 +338,9 @@ void loop1() {
 
   delay(z_ab);//################ Zeichenabfrage  ###################
   // verschieben 7x32 Bit = 224Bit x2mS= 448mS  ????????
-  ptt_delay7=(ptt_delay7 <<1);  if((ptt_delay6 >= 0x10000000)){ptt_delay7 =ptt_delay6+1;}
-  ptt_delay6=(ptt_delay6 <<1);  if((ptt_delay5 >= 0x10000000)){ptt_delay6 =ptt_delay5+1;}
-  ptt_delay5=(ptt_delay5 <<1);  if((ptt_delay4 >= 0x10000000)){ptt_delay5 =ptt_delay4+1;}
+  ptt_delay7=(ptt_delay7 <<1);  if((ptt_delay6 >= 0x10000000)){ptt_delay7 =ptt_delay7+1;}
+  ptt_delay6=(ptt_delay6 <<1);  if((ptt_delay5 >= 0x10000000)){ptt_delay6 =ptt_delay6+1;}
+  ptt_delay5=(ptt_delay5 <<1);  if((ptt_delay4 >= 0x10000000)){ptt_delay5 =ptt_delay5+1;}
   ptt_delay4=(ptt_delay4 <<1);  if((ptt_delay3 >= 0x10000000)){ptt_delay4 =ptt_delay4+1;}
   ptt_delay3=(ptt_delay3 <<1);  if((ptt_delay2 >= 0x10000000)){ptt_delay3 =ptt_delay3+1;}
   ptt_delay2=(ptt_delay2 <<1);  if((ptt_delay1 >= 0x10000000)){ptt_delay2 =ptt_delay2+1;}
